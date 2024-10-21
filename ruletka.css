@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2f8f9d;
+}
+
+#roulette-container {
+    text-align: center;
+    position: relative;
+}
+
+#roulette-wheel {
+    width: 300px;
+    height: 300px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+    background: conic-gradient(
+        green 0deg 18deg,
+        red 18deg 54deg,
+        black 54deg 90deg,
+        red 90deg 126deg,
+        black 126deg 162deg,
+        red 162deg 198deg,
+        black 198deg 234deg,
+        red 234deg 270deg,
+        black 270deg 306deg,
+        red 306deg 342deg,
+        green 342deg 360deg
+    );
+}
+
+#arrow {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #fff;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#spin-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
